@@ -1,0 +1,12 @@
+$mainColor: #FFFFFF;
+$secondColor: #155DA4;
+
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+}
+
+@mixin background-position{
+  background-repeat: no-repeat;
+  background-position: center;
+}

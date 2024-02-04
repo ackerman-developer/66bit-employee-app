@@ -1,0 +1,15 @@
+@import '../../assets/styles/global.scss';
+
+.header{
+  @include flex-center;
+  height: 90px;
+  background: $mainColor;
+  box-shadow: 0 4px 8px 0 rgba(57, 113, 164, 0.25);
+  padding: 0 180px;
+}
+
+.content{
+  @include flex-center;
+  gap: 50px;
+  margin-left: auto;
+}

@@ -1,0 +1,9 @@
+@import '../../assets/styles/global.scss';
+
+.component{
+  @include flex-center;
+  gap: 20px;
+  a{
+    color: #B0B0B0;
+  }
+}
