@@ -26,5 +26,12 @@
   font-size: 20px;
   a{
     color: var(#{--text-color-default});
+    padding: 20px;
   }
 }
+
+.table tbody tr:hover {
+  background: var(#{--components-background-default});
+}
+
+
