@@ -5,7 +5,7 @@ export type EmployeeData = {
   phone: number,
   gender: string,
   position: string,
-  stack: string[],
+  stack: string,
   birthdate: string,
   dateOfEmployment: string
 }

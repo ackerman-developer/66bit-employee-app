@@ -1,0 +1,33 @@
+@import '../../assets/styles/variables.scss';
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  input{
+    width: 100%;
+    border: 0.5px solid #b0b0b0;
+    border-radius: 5px;
+    padding: 10px;
+    height: 43px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    outline: none;
+  }
+  button{
+    border-radius: 8px;
+    padding: 12px 48px;
+    width: 146px;
+    height: 45px;
+    border: none;
+    background: $main-components-color;
+    color: $light-color;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #fff;
+  }
+}
