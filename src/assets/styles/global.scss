@@ -1,9 +1,16 @@
-@mixin flex-center{
+@mixin flex-center {
   display: flex;
   align-items: center;
 }
 
-@mixin background-position{
+@mixin background-position {
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@mixin style-font-link-crumb {
+  color: #B0B0B0;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02em;
 }

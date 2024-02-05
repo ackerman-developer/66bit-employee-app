@@ -4,9 +4,9 @@
   @include flex-center;
   gap: 20px;
   a{
-    color: #B0B0B0;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 0.02em;
+    @include style-font-link-crumb;
+  }
+  p{
+    @include style-font-link-crumb;
   }
 }
