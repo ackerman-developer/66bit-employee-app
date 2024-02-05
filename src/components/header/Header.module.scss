@@ -16,7 +16,7 @@
   color: var(#{--text-color-default});
 }
 
-@media(max-width:480px){
+@media(max-width:768px){
   .header{
     @include flex-center;
     height: 60px;
