@@ -1,0 +1,30 @@
+@import '../../assets//styles/variables.scss';
+
+.table {
+	width: 100%;
+	border: none;
+	margin-bottom: 20px;
+  border-collapse: collapse;
+}
+.table thead th {
+	padding: 30px 0;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: left;
+	color: #B0B0B0;
+  font-weight: 500;
+  font-size: 20px;
+}
+.table tbody td {
+	padding: 30px 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: var(#{--text-color-default});
+	border-top: 1px solid #f2f2f2;
+  font-weight: 400;
+  font-size: 20px;
+  a{
+    color: var(#{--text-color-default});
+  }
+}

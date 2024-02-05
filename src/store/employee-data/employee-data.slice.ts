@@ -4,6 +4,8 @@ import { fetchEmployees, fetchEmployeesByID } from "./api-action";
 
 const initialState: EmployeesState = {
   employees: [],
+  employee: undefined,
+  isEmployeeDataLoading: false,
   isEmployeesDataLoading: false
 }
 
@@ -20,8 +22,12 @@ export const emloyeesData = createSlice({
         state.employees = action.payload
         state.isEmployeesDataLoading = false
       })
+      .addCase(fetchEmployeesByID.pending, (state) => {
+        state.isEmployeesDataLoading = true
+      })
       .addCase(fetchEmployeesByID.fulfilled, (state, action) => {
-        state.employees = state.employees.concat(action.payload)
+        state.employee = action.payload
+        state.isEmployeesDataLoading = false
       })
   }
 })

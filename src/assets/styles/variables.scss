@@ -1,0 +1,34 @@
+$light-color: #F5F5F5;
+$dark-color: #292929;
+$main-components-color: #155DA4;
+
+$body-background-dark: #292929;
+$body-background-light: #FFFFFF;
+
+$components-background-dark: #3E3E3E;
+$components-background-light: #F2F2F2;
+
+$header-box-shadow-dark: rgba(0, 0, 0, 0.1);
+$header-box-shadow-light: rgba(57, 113, 164, 0.25);
+
+:root{
+  // body-background
+  --body-background-dark: #{$body-background-dark};
+  --body-background-light: #{$body-background-light};
+  --body-background-default: var(#{--body-background-light});
+
+  // components-background
+  --components-background-dark: #{$components-background-dark};
+  --components-background-light: #{$components-background-light};
+  --components-background-default: var(#{--components-background-light});
+
+  // header-box-shadow
+  --header-box-shadow-dark: #{$header-box-shadow-dark};
+  --header-box-shadow-light: #{$header-box-shadow-light};
+  --header-box-shadow-default: var(#{--header-box-shadow-light});
+
+  // text-color
+  --text-color-dark: #{$light-color};
+  --text-color-light: #{$dark-color};
+  --text-color-default: var(#{--text-color-light});
+}

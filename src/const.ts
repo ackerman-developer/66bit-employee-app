@@ -6,3 +6,4 @@ export enum AppRoutes {
 export enum APIRoute {
   emloyees = '/Employee'
 }
+

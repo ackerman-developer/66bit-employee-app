@@ -5,12 +5,14 @@ export type EmployeeData = {
   phone: number,
   gender: string,
   position: string,
-  stack: string,
+  stack: string[],
   birthdate: string,
   dateOfEmployment: string
 }
 
 export type EmployeesState = {
   employees: EmployeeData[],
+  employee?: EmployeeData,
+  isEmployeeDataLoading: boolean,
   isEmployeesDataLoading: boolean
 }

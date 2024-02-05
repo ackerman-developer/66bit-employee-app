@@ -16,14 +16,14 @@ export const fetchEmployees = createAsyncThunk<EmployeeData[], undefined, {
   },
 )
 
-export const fetchEmployeesByID = createAsyncThunk<EmployeeData[], {id: string}, {
+export const fetchEmployeesByID = createAsyncThunk<EmployeeData, {id: string}, {
   dispatch: AppDispatch
   state: RootState
   extra: AxiosInstance
 }>(
   'data/fetchEmployeesByID',
   async ({id}, {extra: api}) => {
-    const {data} = await api.get<EmployeeData[]>(`${APIRoute.emloyees}/${id}`)
+    const {data} = await api.get<EmployeeData>(`${APIRoute.emloyees}/${id}`)
     return data
   },
 )

@@ -1,3 +1,4 @@
+@import '../../assets/styles/variables.scss';
 @import '../../assets/styles/global.scss';
 
 .switch {
@@ -7,7 +8,7 @@
   height: 26px;
   margin: 0;
   vertical-align: top;
-  background: $secondColor;
+  background: $main-components-color;
   border-radius: 30px;
   outline: none;
   cursor: pointer;
@@ -23,7 +24,7 @@
   position: absolute;
   left: 6%;
   top: 10%;
-  background-color: $mainColor;
+  background-color: $light-color;
   @include background-position;
   background-image: url('../../assets/images/sun.svg');
   width: 20px;
@@ -35,10 +36,10 @@
 
 .switch:checked::after {
   transform: translateX(calc(100% + 8px));
-  background-color: $mainColor;
+  background-color: $light-color;
   @include background-position;
   background-image: url('../../assets/images/moon.svg');
 }
 .switch:checked {
-  background-color: $secondColor;
+  background-color: $main-components-color;
 }

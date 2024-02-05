@@ -1,6 +1,6 @@
-@import '../../assets/styles/global.scss';
+@import '../../../assets/styles/global.scss';
 
-.component{
+.crumb{
   @include flex-center;
   gap: 20px;
   a{
