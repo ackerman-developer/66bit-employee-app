@@ -17,14 +17,12 @@ export default function TableEmpoyees() {
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearchChange = (e: any) => {
-    setSearchQuery(e.target.value);
-  };
+    setSearchQuery(e.target.value)
+  }
 
   useEffect(() => {
     dispatch(fetchEmployees())
   }, [dispatch])
-
-  const uniqueStacks = new Set(employees.flatMap((employee) => Array.isArray(employee.stack) ? employee.stack : []))
 
   const filteredEmployees = employees.filter((employee) =>
     employee.name.toLowerCase().includes(searchQuery.toLowerCase()) &&
@@ -33,25 +31,14 @@ export default function TableEmpoyees() {
     (selectedGender === '' || employee.gender.toLowerCase().includes(selectedGender.toLowerCase()))
   )
 
-  const positions = Array.from(new Set(employees.map((employee) => employee.position)))
-  const genders = Array.from(new Set(employees.map((employee) => employee.gender)))
+  // const positions = Array.from(new Set(employees.map((employee) => employee.position)))
+  // const genders = Array.from(new Set(employees.map((employee) => employee.gender)))
 
 
   return(
     <>
       <div className={styles.filter}>
-        <h1>Список сотрудников</h1>
-        <div>
-          <label>Должность:</label>
-          <select value={selectedPosition} onChange={(e) => setSelectedPosition(e.target.value)}>
-            <option value="">Все</option>
-            {positions.map((position) => (
-              <option key={position} value={position}>{position}</option>
-            ))}
-          </select>
-        </div>
-
-        <div>
+        {/* <div>
           <label>Stack:</label>
           <select value={selectedStack} onChange={(e) => setSelectedStack(e.target.value)}>
             <option value="all">Все</option>
@@ -69,9 +56,14 @@ export default function TableEmpoyees() {
               <option key={gender} value={gender}>{gender}</option>
             ))}
           </select>
-        </div>
+        </div> */}
       </div>
-      <FilterEmployees searchQuery={searchQuery} handleSearchChange={handleSearchChange}/>
+      <FilterEmployees
+        searchQuery={searchQuery}
+        handleSearchChange={handleSearchChange}
+        selectedPosition={selectedPosition}
+        setSelectedPosition={setSelectedPosition}
+      />
       <div className={styles.selected_filter}>
         <h1>Выбранные фильтры</h1>
         {selectedPosition && (

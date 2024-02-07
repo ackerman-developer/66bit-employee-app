@@ -16,3 +16,17 @@
   color: var(#{--text-color-default});
 }
 
+@media(max-width:480px){
+  .header{
+    height: 54px;
+    padding: 0 24px;
+  }
+
+  .content{
+    gap: 50px;
+    p{
+      visibility: hidden;
+    }
+  }
+}
+

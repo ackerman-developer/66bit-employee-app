@@ -68,3 +68,51 @@
     font-size: 24px;
   }
 }
+
+@media(max-width:480px){
+  .container{
+    padding-top: 50px;
+    h2{
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+
+  .first_block{
+    display: flex;
+    gap: 50px;
+    img{
+      width: 100px;
+      height: 100px;
+    }
+    .text{
+      gap: 20px;
+      h1{
+        font-size: 20px;
+      }
+      p{
+        font-size: 14px;
+      }
+      ul{
+        gap: 10px;
+      }
+      li{
+        width: 70px;
+        height: 34px;
+      }
+    }
+  }
+
+  .second_block{
+    margin-top: 20px;
+    gap: 30px;
+    .headers{
+      gap: 10px;
+      font-size: 14px;
+    }
+    .data{
+      gap: 10px;
+      font-size: 14px;
+    }
+  }
+}
